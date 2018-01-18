@@ -112,7 +112,7 @@ public class Parser {
 
 	private static void setHeader(String text, Annotation anotacion) {
 
-		//Se comprueba si el primer caracter es un código raro
+		//Se comprueba si el primer caracter es un cï¿½digo raro
 		int primerCaracter = text.charAt(0);
 		if (primerCaracter == 65279) {
 			text = text.substring(1);
@@ -159,11 +159,11 @@ public class Parser {
 			anotacion.setTipo(Annotation.MAR);
 		}
 
-		if ((puntero = trozo[0].indexOf("página")) > 0) {
+		if ((puntero = trozo[0].indexOf("pÃ¡gina")) > 0) {
 			anotacion.setPaginaIni(Integer.parseInt(trozo[0].substring(puntero + 7, trozo[0].length()).trim()));
 		}
 
-		if ((puntero = trozo[1].indexOf("posición")) > 0) {
+		if ((puntero = trozo[1].indexOf("posiciÃ³n")) > 0) {
 			String[] coor = trozo[1].substring(puntero + 9, trozo[1].length()).trim().split("-");
 			anotacion.setPosIni(Integer.parseInt(coor[0]));
 			if (coor.length > 1) {
