@@ -13,11 +13,11 @@ import org.apache.log4j.Logger;
 
 
 /**
- * Canaliza las llamadas a través de la consola. Gestiona los parámetros de entra y redirige a Paser
- * El único parámetro obligatorio es -o [Nombre del fichero de salida]
+ * Canaliza las llamadas a traves de la consola. Gestiona los parametros de entra y redirige a Paser
+ * El unico parametro obligatorio es -o [Nombre del fichero de salida]
  */
 public class App {
-	private static Logger logger;
+	private static Logger logger; 
 
 	public static void main(String[] arguments) throws IOException {
 

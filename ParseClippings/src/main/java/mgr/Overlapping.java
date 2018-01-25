@@ -150,7 +150,7 @@ public class Overlapping {
 
 				resultado.add(annotations.get(i));
 				if (verbose) {
-					logger.info("... se añade : " + seqA);
+					logger.info("... se aniade : " + seqA);
 				}
 			}
 
