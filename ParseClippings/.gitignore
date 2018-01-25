@@ -4,5 +4,6 @@
 .project
 .classpath
 bin/**
-.txt
-.log
+*.txt
+*.log
+
