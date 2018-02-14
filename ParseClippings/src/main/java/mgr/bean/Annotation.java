@@ -319,10 +319,19 @@ public class Annotation implements Comparable<Annotation> {
 
 	public static void main(String[] arg) {
 		Annotation an1 = new Annotation();
-		an1.setAutor("Pepe");
-		an1.setTitulo("Cosa");
+		an1.setTitulo("Título");
+		an1.setAutor("Autor");
+		an1.setFecha(new Date());
+		an1.setTipo(1);
+		an1.setMensaje("Mensaje");
 		an1.setPaginaIni(10);
-
+		an1.setPaginaFin(11);
+		an1.setPosIni(100);
+		an1.setPosFin(200);
+		//Título	Autor	Nota	10	11	100	200	26/01/2018 05:18:19	Mensaje
+		
+		
+	
 		Annotation an2 = new Annotation();
 		an2.setAutor("Pepe");
 		an2.setTitulo("cosa");
@@ -331,5 +340,6 @@ public class Annotation implements Comparable<Annotation> {
 		int compare = an1.compareTo(an2);
 		
 		System.out.println("compare: " + compare);
+		System.out.println(an1.toCSV());
 	}
 }

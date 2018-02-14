@@ -13,16 +13,4 @@ jar {
 		attributes 'Main-Class': 'mgr.App'
 	}
 }
-sourceSets {
-   main {
-      java {
-         srcDir 'src'
-      }
-   }
-	
-   test {
-      java {
-         srcDir 'test'
-      }
-   }
-}
+

@@ -98,7 +98,7 @@ public class Overlapping {
 		return resultado;
 	}
 
-	private static void imprime(int[][] resultado) {
+	protected static void imprime(int[][] resultado) {
 		for (int fila = 0; fila < resultado.length; fila++) {
 			for (int columna = 0; columna < resultado[fila].length; columna++) {
 				System.out.print(resultado[fila][columna] + " ");
